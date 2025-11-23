@@ -19,16 +19,20 @@ public class CobraseEscadas {
 
                 //posicao das cobras e escadas
                int[] efeitos =new int[51];
-
+                //cobra
                 efeitos[20] = 3;
                 efeitos[47] = 33;
-                efeitos[48] = 26;
+                efeitos[11] = 7;
                 efeitos[27] = 5;
+                efeitos[19] = 2;
                 //escada
                 efeitos[4] = 16;
                 efeitos[10] = 28;
                 efeitos[22] = 38;
                 efeitos[14] = 36;
+                efeitos[9] = 23;
+                efeitos[26] = 48;
+                efeitos[34] = 46;
 
                 // posicao inicial do jogador
                 int posicao = 1;
@@ -44,7 +48,9 @@ public class CobraseEscadas {
 
                     System.out.print("\nDigite ENTER para rolar o dado\uD83C\uDFB2 ...");
                     input.nextLine();
-                    try { //corta o bug do enter
+
+                    //corta o bug do enter
+                    try {
                         System.in.read();
                     } catch (Exception e) {
                         e.printStackTrace();
